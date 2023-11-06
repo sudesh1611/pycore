@@ -1,0 +1,2 @@
+class TwistlockClientConstants:
+    PROJECT = "project"
