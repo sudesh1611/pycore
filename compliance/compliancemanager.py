@@ -1,5 +1,5 @@
-from compliance import Compliance
-from logger import Logger
+from .compliance import Compliance
+from ..logger import Logger
 from typing import Set
 
 import traceback

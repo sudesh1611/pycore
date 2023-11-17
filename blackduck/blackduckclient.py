@@ -1,12 +1,13 @@
-from blackduck import BlackDuckProject, BlackDuckVersion
-from cve import CveManager
-from configs import BlackDuckClientConfig
-from constants import BlackDuckClientConstants, BlackduckReportParserConstants, CveConstants, GlobalConstants
+from .blackduckproject import BlackDuckProject
+from .blackduckversion import BlackDuckVersion
+from ..cve import CveManager
+from ..configs import BlackDuckClientConfig
+from ..constants import BlackDuckClientConstants, BlackduckReportParserConstants, CveConstants, GlobalConstants
+from ..helpers.datetimeconverter import format_common_date_time, parse_bduck_date_time
+from ..logger import Logger
+from ..package import PackageManager
+from ..report import ProcessedReport
 from datetime import datetime, timedelta
-from helpers.datetimeconverter import format_common_date_time, parse_bduck_date_time
-from logger import Logger
-from package import PackageManager
-from report import ProcessedReport
 from typing import Any, Dict, List, Optional
 
 import json

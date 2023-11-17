@@ -1,12 +1,12 @@
-from compliance import ComplianceManager
-from configs import TwistlockClientConfig
-from constants import CveConstants, GlobalConstants, ProcessedReportConstants, TwistlockClientConstants, TwistlockReportParserConstants
-from cve import CveManager
+from ..compliance import ComplianceManager
+from ..configs import TwistlockClientConfig
+from ..constants import CveConstants, GlobalConstants, ProcessedReportConstants, TwistlockClientConstants, TwistlockReportParserConstants
+from ..cve import CveManager
+from ..helpers.datetimeconverter import format_common_date_time, parse_twistlock_date_time
+from ..logger import Logger
+from ..package import PackageManager
+from ..report import ProcessedReport
 from datetime import datetime, timedelta
-from helpers.datetimeconverter import format_common_date_time, parse_twistlock_date_time
-from logger import Logger
-from package import PackageManager
-from report import ProcessedReport
 from time import sleep
 from typing import Any, Dict, List, Optional
 

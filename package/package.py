@@ -1,4 +1,4 @@
-from constants import PackageConstants
+from ..constants import PackageConstants
 
 import json
 

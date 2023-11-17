@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from logger import Logger
+from ..logger import Logger
 from typing import List, Optional
 
 class Bash(ABC):

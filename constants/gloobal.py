@@ -1,6 +1,9 @@
 class GlobalConstants:
     INFO_CAPS = "INFO"
     ERROR_CAPS = "ERROR"
+    GET: str = "get"
+    POST: str = "post"
+    DELETE: str = "delete"
     CONTENT_TYPE = "Content-Type"
     ACCEPT = "Accept"
     APPLICATION_JSON = "application/json"

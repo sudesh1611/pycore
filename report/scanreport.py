@@ -1,7 +1,7 @@
-from constants import ScanReportConstants
+from .reportpaths import ReportPaths
+from ..constants import ScanReportConstants
+from ..helpers.datetimeconverter import format_common_date, format_common_time, parse_common_date, parse_common_time
 from datetime import datetime
-from helpers.datetimeconverter import format_common_date, format_common_time, parse_common_date, parse_common_time
-from report import ReportPaths
 from typing import Any, Dict, List
 
 import json

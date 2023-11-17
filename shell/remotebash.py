@@ -1,4 +1,4 @@
-from shell import Bash
+from .bash import Bash
 
 import paramiko
 import traceback

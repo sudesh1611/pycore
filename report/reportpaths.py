@@ -1,4 +1,4 @@
-from constants import ReportPathsConstants
+from ..constants import ReportPathsConstants
 from typing import Any, Dict
 
 import json

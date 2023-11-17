@@ -1,6 +1,6 @@
-from configs import JiraClientConfig
+from ..configs import JiraClientConfig
+from ..logger import Logger
 from jira import JIRA, Issue
-from logger import Logger
 from time import sleep
 from typing import List, Optional
 

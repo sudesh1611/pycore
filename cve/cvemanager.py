@@ -1,5 +1,5 @@
-from cve import Cve
-from logger import Logger
+from .cve import Cve
+from ..logger import Logger
 from typing import Set
 
 import traceback

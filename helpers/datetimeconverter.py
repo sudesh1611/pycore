@@ -1,6 +1,6 @@
-from constants.blackduckreportparser import BlackduckReportParserConstants
-from constants.gloobal import GlobalConstants
-from constants.twistlockreportparser import TwistlockReportParserConstants
+from ..constants.blackduckreportparser import BlackduckReportParserConstants
+from ..constants.gloobal import GlobalConstants
+from ..constants.twistlockreportparser import TwistlockReportParserConstants
 from datetime import datetime
 from typing import Optional
 

@@ -1,8 +1,8 @@
-from compliance import Compliance, ComplianceManager
-from constants import ProcessedReportConstants
-from cve import Cve, CveManager
-from logger import Logger
-from package import Package, PackageManager
+from ..compliance import Compliance, ComplianceManager
+from ..constants import ProcessedReportConstants
+from ..cve import Cve, CveManager
+from ..logger import Logger
+from ..package import Package, PackageManager
 from typing import Any, Dict, List, Optional
 
 import json

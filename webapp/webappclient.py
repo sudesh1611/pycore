@@ -1,7 +1,7 @@
-from configs import WebAppConfig
-from constants import WebAppConstants
-from logger import Logger
-from report import ScanReport
+from ..configs import WebAppConfig
+from ..constants import WebAppConstants
+from ..logger import Logger
+from ..report import ScanReport
 from requests import post, get
 from requests.auth import HTTPBasicAuth
 from typing import Dict, List, Optional

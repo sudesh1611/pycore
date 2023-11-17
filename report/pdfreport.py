@@ -1,7 +1,7 @@
+from ..configs import PdfReportConfig, WebAppConfig
+from ..constants import WebAppConstants
+from ..logger import Logger
 from base64 import b64decode
-from configs import PdfReportConfig, WebAppConfig
-from constants import WebAppConstants
-from logger import Logger
 from selenium import webdriver
 from selenium.webdriver.common.print_page_options import PrintOptions
 from selenium.webdriver.common.by import By
@@ -24,7 +24,7 @@ class PdfReport:
         self.driver.set_window_size(3840, 2400)
         self._logger = Logger(log_file_path)
     
-    def save_pdf(self, scan_id: str, image_id: int, dest_abs_path: str, timeout = 60, type_filter: str = None, image_filter: str = None) -> bool:
+    def save_pdf(self, scan_id: str, image_id: int, dest_abs_path: str, timeout = 60) -> bool:
         retry_counter = 3
         while(retry_counter):
             self._logger.info(f"Generating pdf for image {image_id}")
@@ -34,7 +34,7 @@ class PdfReport:
                     type_filter = "Default"
                 if image_filter is None:
                     image_filter = "Default"
-                self.driver.get(f'{WebAppConfig.REPORT_DETAILS_PREFIX_URL}{WebAppConstants.SCAN_ID}={scan_id}&{WebAppConstants.IMAGE_ID}={image_id}&{WebAppConstants.TYPE_FILTER}={type_filter}&{WebAppConstants.IMAGE_FILTER}={image_filter}')
+                self.driver.get(f'{WebAppConfig.REPORT_DETAILS_PREFIX_URL}{WebAppConstants.SCAN_ID}={scan_id}&{WebAppConstants.IMAGE_ID}={image_id}')
                 self.driver.maximize_window()
                 try:
                     element = WebDriverWait(self.driver, timeout).until(

@@ -4,5 +4,6 @@ from .blackduckreport import BlackduckReportConfig
 from .jiraclient import JiraClientConfig
 from .pdfreport import PdfReportConfig
 from .twistlockclient import TwistlockClientConfig
+from .twistlockproject import TwistlockProjectConfig
 from .twistlockreport import TwistlockReportConfig
 from .webapp import WebAppConfig

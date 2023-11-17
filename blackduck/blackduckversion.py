@@ -1,5 +1,5 @@
+from ..helpers.datetimeconverter import parse_common_date_time, format_common_date_time, parse_bduck_date_time
 from datetime import datetime
-from helpers.datetimeconverter import parse_common_date_time, format_common_date_time, parse_bduck_date_time
 
 class BlackDuckVersion:
     id: str = None

@@ -1,5 +1,5 @@
-from constants import ComplianceConstants
-from logger import Logger
+from ..constants import ComplianceConstants
+from ..logger import Logger
 from typing import Any, Dict, Optional
 
 import json
