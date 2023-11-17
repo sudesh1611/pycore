@@ -4,6 +4,7 @@ from . import helpers
 from . import logger
 from . import cve
 from . import package
+from . import compliance
 from . import shell
 from . import report
 from . import blackduck
