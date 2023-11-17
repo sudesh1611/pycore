@@ -7,3 +7,4 @@ class TwistlockClientConfig:
     IMAGE_NAMES_API = BASE_API + "/images/names"
     IMAGE_REPORT_API = BASE_API + "/images"
     TOKEN_EXPIRY_SPAN = 30 # Twistlock token expiry time in minutes
+    VERIFY_TWISTLOCK_SERVER_CERTIFICATE = False

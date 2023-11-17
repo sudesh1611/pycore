@@ -12,7 +12,7 @@ class JiraClient:
 
     def __init__(self, personal_access_token: str, log_file_path: str = None) -> None:
         options = {
-            "verify": False
+            "verify": JiraClientConfig.VERIFY_JIRA_SERVER_CERTIFICATE
         }
         self._client = JIRA(JiraClientConfig.HOST, token_auth=personal_access_token, options=options)
         self._logger = Logger(log_file_path)
