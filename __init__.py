@@ -8,3 +8,4 @@ from . import compliance
 from . import shell
 from . import report
 from . import blackduck
+from . import jiraa
