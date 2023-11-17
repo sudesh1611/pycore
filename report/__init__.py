@@ -1,0 +1,1 @@
+from .processedreport import ProcessedReport
