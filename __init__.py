@@ -10,3 +10,4 @@ from . import report
 from . import blackduck
 from . import jiraa
 from . import twistlock
+from . import webapp
